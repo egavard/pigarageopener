@@ -3,20 +3,22 @@
   error_reporting(E_ALL);
   if(isset($trigger)){
     if($trigger == 'up'){
+    resetAll();
       exec("gpio mode 15 out");
-      exec("gpio write 15 1");
       sleep(23);
-      exec("gpio write 15 0");
+	  exec("gpio mode 15 in");
     }elseif ($trigger == 'down') {
+    resetAll();
       exec("gpio mode 1 out");
-      exec("gpio write 1 1");
       sleep(23);
-      exec("gpio write 1 0");
+	  exec("gpio mode 1 in");
     }elseif($trigger == 'stop'){
-      exec("gpio mode 1 out");
-      exec("gpio write 1 0");
-      exec("gpio mode 15 out");
-      exec("gpio write 15 0");
+	    resetAll();
     }
+  }
+  
+  function resetAll(){
+    exec("gpio mode 1 in");
+	  exec("gpio mode 15 in");
   }
 ?>
