@@ -50,8 +50,8 @@
       <p>Souhaitez-vous réellement ouvrir le volet ?</p>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Annuler</a>
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="up-button">Ouvrir</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="up-button">Ouvrir le volet</a>
     </div>
   </div>
     <!-- Modal Structure -->
@@ -61,8 +61,8 @@
       <p>Souhaitez-vous rééllement fermer le volet ? Avez-vous vérifié que rien n'encombre la descente ?</p>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Annuler</a>      
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="down-button">Fermer</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Annuler</a>      
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="down-button">Fermer le volet</a>
     </div>
   </div>
 
