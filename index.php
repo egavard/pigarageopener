@@ -23,8 +23,8 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <div class="row center">
-        <a href="#" id="up-button" class="btn btn-large blue waves-effect waves-light">Ouvrir volet roulant</a>
-        <a href="#" id="down-button" class="btn btn-large green waves-effect waves-light">Fermer volet roulant</a>
+        <a href="#confirmUp" class="btn btn-large blue waves-effect waves-light">Ouvrir volet roulant</a>
+        <a href="#confirmDown" class="btn btn-large green waves-effect waves-light">Fermer volet roulant</a>
       </div>
       <div class="row center">
         <a href="#" id="stop-button" class="btn btn-large red waves-effect waves-light"><i class="material-icons left">error_outline</i>STOP</a>
@@ -42,6 +42,29 @@
       </div>
     </div>
   </div>
+  
+    <!-- Modal Structure -->
+  <div id="confirmUp" class="modal">
+    <div class="modal-content">
+      <h4>Ouverture du volet</h4>
+      <p>Souhaitez-vous réellement ouvrir le volet ?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Annuler</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="up-button">Ouvrir</a>
+    </div>
+  </div>
+    <!-- Modal Structure -->
+  <div id="confirmDown" class="modal">
+    <div class="modal-content">
+      <h4>Fermeture du volet</h4>
+      <p>Souhaitez-vous rééllement fermer le volet ? Avez-vous vérifié que rien n'encombre la descente ?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Annuler</a>      
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="down-button">Fermer</a>
+    </div>
+  </div>
 
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -51,6 +74,7 @@ $(document).ready(function(){
 
   var triggered = false;
   init();
+  $('.modal').modal();
 
   function init(){
     $("#waiting-row").hide();
