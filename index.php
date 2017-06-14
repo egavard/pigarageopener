@@ -86,8 +86,10 @@ $(document).ready(function(){
       $("#waiting-row").show();
       $("#waiting-bar-"+sens).show();
       setTimeout(function(){
+        $("a").removeClass("disabled");²
+      },5000);
+      setTimeout(function(){
         triggered = false;
-        $("a").removeClass("disabled");
         $("#waiting-row").hide();
         $("#waiting-bar-"+sens).hide();
       },23000);
