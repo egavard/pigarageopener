@@ -65,7 +65,7 @@
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="down-button">Fermer le volet</a>
     </div>
   </div>
-
+&copy; egavard.fr
 </body>
 <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
